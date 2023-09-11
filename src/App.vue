@@ -14,39 +14,6 @@
           <p class="fs-4 me-4">
             <i class="fas fa-location-dot me-2"></i> Ташкент
           </p>
-          <!-- Button trigger modal
-          <button
-            type="button"
-            class="btn btn-danger rounded-circle p-4"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-          <i class="fa-solid fa-bars fs-4"></i>
-          </button>
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog ">
-              <div class="modal-content bg-danger">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Modal title
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </header>
@@ -79,7 +46,9 @@
     <div class="my-5 section-img">
       <p>Присоединяйтесь к нам.</p>
     </div>
-    <div class="row img-container my-5 rounded-bottom-5 py-3 w-100 mx-0">
+    <div
+      class="row no-gutters img-container my-5 rounded-bottom-5 py-3 w-100 mx-0"
+    >
       <ImageBox />
       <!-- <Pagination/> -->
     </div>
@@ -105,7 +74,7 @@ export default {
     ImageBox,
     Representation,
     FooterItem,
-    // Pagination
+    // Pagination,
   },
   data() {
     return {
@@ -179,16 +148,9 @@ export default {
       ],
     };
   },
-  computed: {
-    getCurrentPageImages() {
-      const startIndex = (this.$refs.pagination.currentPage - 1) * 12;
-      const endIndex = startIndex + 12;
-      return this.CurrentImages.slice(startIndex, endIndex);
-    },
-  },
 };
 </script>
-<style>
+<style lang="scss">
 .club {
   margin-top: 150px;
 }
@@ -209,6 +171,9 @@ export default {
 .section-img p {
   color: #fff;
   z-index: 2;
+}
+.row.no-gutters{
+      --bs-gutter-x: 0rem !important;
 }
 .img-container {
   background-color: #252528;
