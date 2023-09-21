@@ -1,5 +1,5 @@
 <template>
-  <div v-for="(image, index) in CurrentImages" :key="index" class="col-4 p-1">
+  <div v-for="(image, index) in CurrentImages" :key="index" class="col-md-4 col-sm-12 p-1">
     <div class="img-box rounded text-center py-3">
       <img :src="image" alt="img" width="420" class="rounded-4" />
     </div>
