@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex">
+  <div class="representation-content d-flex">
     <div class="representation px-5">
       <h2>Хотите стать представителем Chery?</h2>
       <br /><br />
@@ -15,8 +15,8 @@
     </div>
     <div class="form-representation">
       <form action="#">
-        <div class="row my-5">
-          <div class="input-box col p-0">
+        <div class="input-wrapper  my-5">
+          <div class="input-box p-0">
             <label id="name" for="exampleFormControlInput1" class="form-label"
               >Как к вам обращаться?*
             </label>
@@ -28,7 +28,7 @@
               aria-label="Имя Фамилия"
             />
           </div>
-          <div class="input-box col p-0">
+          <div class="input-box p-0">
             <label id="tel" for="exampleFormControlInput1" class="form-label"
               >Укажите ваш номер телефона*
             </label>
@@ -41,8 +41,8 @@
             />
           </div>
         </div>
-        <div class="row my-5">
-          <div class="input-box col p-0">
+        <div class="input-wrapper  my-5">
+          <div class="input-box p-0">
             <label id="email" for="exampleFormControlInput1" class="form-label"
               >Укажите Ваш E-mail*
             </label>
@@ -53,7 +53,7 @@
               aria-label="Ваш Е-mail"
             />
           </div>
-          <div class="input-box col p-0">
+          <div class="input-box col-md-6 col-sm-12 p-0">
             <label for="exampleFormControlInput1" class="form-label"
               >Город проживания*
             </label>
@@ -65,8 +65,8 @@
             />
           </div>
         </div>
-        <div class="row my-5">
-          <div class="input-box col p-0">
+        <div class="input-wrapper my-5">
+          <div class="input-box p-0">
             <label id="model" for="exampleFormControlInput1" class="form-label"
               >Какая у вас модель автомобиля?*
             </label>
@@ -78,7 +78,7 @@
               aria-label="Model"
             />
           </div>
-          <div class="input-box col p-0">
+          <div class="input-box col-md-6 col-sm-12 p-0">
             <label id="car" for="exampleFormControlInput1" class="form-label"
               >Укажи, пожалуйста, VIN**
             </label>
@@ -91,8 +91,8 @@
             />
           </div>
         </div>
-        <div class="row my-5">
-          <div class="col">
+        <div class="input-wrapper my-5">
+          <div class="">
             <input type="checkbox" name="conditions" id="conditions" /><br />
             <p>
               Я согласен с <br /><a href="#" class="conditions"

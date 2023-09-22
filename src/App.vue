@@ -47,17 +47,17 @@
     </div>
   </div>
   <div class="my-5 section-img">
-      <p>Присоединяйтесь к нам.</p>
-    </div>
+    <p>Присоединяйтесь к нам.</p>
+  </div>
   <div
-      class="section-images row no-gutters img-container my-5 rounded-bottom-5 py-3 w-100 mx-0"
-    >
-      <ImageBox />
-      <!-- <Pagination/> -->
-    </div>
-  <!-- <div class="mt-5 py-5">
-      <Representation />
-    </div> -->
+    class="section-images row no-gutters img-container my-5 rounded-bottom-5 py-3 w-100 mx-0"
+  >
+    <ImageBox />
+    <!-- <Pagination/> -->
+  </div>
+  <div class="section-representation mt-5 py-5">
+    <Representation />
+  </div>
   <!-- <FooterItem /> -->
 </template>
 <script>
@@ -153,7 +153,7 @@ export default {
 };
 </script>
 <style lang="scss">
-$mobile: 360px;
+$mobile: 365px;
 
 @media (max-width: $mobile) {
   .header {
@@ -232,9 +232,43 @@ $mobile: 360px;
       }
     }
   }
-  .section-img{
-    p{
+  .section-img {
+    p {
       font-size: 20px;
+    }
+  }
+  .section-images {
+    .img-box {
+      img {
+        width: 300px !important;
+      }
+    }
+  }
+  .section-representation {
+    .representation-content {
+      display: block !important;
+      .representation {
+        padding: 0px 10px !important;
+        margin-bottom: 0px !important;
+        width: 100%;
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .form-representation {
+        width: 100%;
+        .input-wrapper {
+          margin: 10px auto !important;
+          .input-box {
+
+            height: 80px !important;
+            padding: 5px !important;
+            input, label{
+              width: 80% !important;
+            }
+          }
+        }
+      }
     }
   }
 }
