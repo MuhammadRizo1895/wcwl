@@ -58,7 +58,7 @@
   <div class="section-representation mt-5 py-5">
     <Representation />
   </div>
-  <!-- <FooterItem /> -->
+  <FooterItem />
 </template>
 <script>
 import Carusel from "../src/components/Carusel.vue";
@@ -258,15 +258,58 @@ $mobile: 365px;
       .form-representation {
         width: 100%;
         .input-wrapper {
-          margin: 10px auto !important;
           .input-box {
-
+            margin: 20px 0px !important;
             height: 80px !important;
             padding: 5px !important;
-            input, label{
+            input,
+            label {
               width: 80% !important;
             }
           }
+          .submit-wrapper {
+            width: 90%;
+            margin: 0 auto !important;
+            button {
+              padding: 10px 16px !important;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    margin: 50px 0px;
+    .footer-wrapper__img {
+      padding: 0px !important;
+      justify-content: center;
+      img {
+        width: 200px !important;
+      }
+    }
+    .footer-wrapper__content {
+      flex-direction: column;
+      .section-item{
+        width: 100% !important;
+        br{
+          display: none;
+        }
+        p{
+          margin:10px 0px;
+        }
+      }
+      .social-set{
+        display: flex;
+        margin-top: 20px;
+        a{
+          padding: 5px;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
         }
       }
     }

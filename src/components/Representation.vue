@@ -53,7 +53,7 @@
               aria-label="Ваш Е-mail"
             />
           </div>
-          <div class="input-box col-md-6 col-sm-12 p-0">
+          <div class="input-box p-0">
             <label for="exampleFormControlInput1" class="form-label"
               >Город проживания*
             </label>
@@ -78,7 +78,7 @@
               aria-label="Model"
             />
           </div>
-          <div class="input-box col-md-6 col-sm-12 p-0">
+          <div class="input-box p-0">
             <label id="car" for="exampleFormControlInput1" class="form-label"
               >Укажи, пожалуйста, VIN**
             </label>
@@ -92,7 +92,7 @@
           </div>
         </div>
         <div class="input-wrapper my-5">
-          <div class="">
+          <div class="submit-wrapper">
             <input type="checkbox" name="conditions" id="conditions" /><br />
             <p>
               Я согласен с <br /><a href="#" class="conditions"
