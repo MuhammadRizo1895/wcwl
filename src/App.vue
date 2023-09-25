@@ -153,7 +153,7 @@ export default {
 };
 </script>
 <style lang="scss">
-$mobile: 320px;
+$mobile: 375px;
 
 @media (max-width: $mobile) {
   .header {
